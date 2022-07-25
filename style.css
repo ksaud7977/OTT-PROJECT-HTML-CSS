@@ -5,6 +5,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 .container .head{
@@ -145,13 +146,13 @@ body{
   }
 
 .card-1,.card-2,.card-3,.card-4{
-    background-color: black;
+    /* background-color: black; */
     border-top: 8px solid #222222;
     padding: 50px;
     color: #fff;
 }
 
-.card-1{
+.card-1,.card-3{
     position: relative;
     display: inline-grid;
     grid-template-columns: 50% 40%;
@@ -159,30 +160,50 @@ body{
     align-items: center;
     padding: 25px 45px 50px;
 }
-.desc-1 h1{
+
+.style-cards h1{
     font-size: 3rem;
     padding: 1rem;
     padding-left: 0;
 }
-.desc-1 p{
+
+.style-cards p{
     font-size: 1.7rem;
     line-height: 2rem;
 }
 
-.desc-1{
+.desc-1, .desc-3{
     /* background-color: rgb(18, 139, 139); */
     padding-left: 80px;
 }
 
-.card-1 img{
-    grid-column: 2/2;
-    grid-row: 1/2;
-}
 .card-1 video{
     position: relative;
     width: 100%;
     height: 58%;
     grid-column: 2/2;
+    grid-row:1/2;
+    margin-left: 15%;
+    /* margin-bottom: 5%; */
+    z-index: -1;
+}
+.card-1 img{
+    grid-column: 2/2;
     grid-row: 1/2;
-    /* z-index: -1; */
+}
+
+.card-3 video{
+    position: relative;
+    width: 100%;
+    height: 46%;
+    grid-column: 2/2;
+    grid-row:1/2;
+    margin-left: 13%;
+    margin-bottom: 30%;
+    /* margin-bottom: 5%; */
+    z-index: -1;
+}
+.card-3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
 }
