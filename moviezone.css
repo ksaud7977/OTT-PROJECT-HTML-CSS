@@ -10,6 +10,7 @@ body{
 .head img{
     /* position: relati ve; */
     width: 10%;
+    padding-left: 25px;
 }
 
 .home-image{
@@ -53,4 +54,46 @@ body{
     width: 25px;
     position: absolute;
     padding-left: 5px;
+}
+
+.original{
+    color: white;
+    padding-left: 5px;
+}
+
+.original h3{
+    margin-top: 5px;
+}
+
+.original .no{
+    display: flex;
+    height: 55vh;
+    padding-top: 5px;
+    margin-left: 0px;
+}
+
+.original .no img{
+    width: 160px;
+    height: 280px;
+    margin: 3px;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+.original .no img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
+
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(255, 72, 0);
+    background: transparent;
 }
